@@ -28,7 +28,5 @@ then run:
 
 to run test cases
 ```
-gem install bundler
-bundle install
 bundle exec rake spec
 ```
