@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+require_relative './file_parser'
+require_relative './calculate'
+
+file_parser = JobCheckout::FileParser.new(ARGV[0] || 'input_data.txt')
+input_data      = file_parser.inputs
+input_data.each do |data|
+    _calculate_total = JobCheckout::Calculate.new(
+        customer: data[:customer],
+        ads_added: data[:skus]
+    )
+    _calculate_total.execute
+end

@@ -1,0 +1,13 @@
+
+
+Customer: default
+SKUs:classic, standout, premium
+
+Customer: Unilever
+SKUs: classic, classic, classic, premium
+
+Customer: Apple
+SKUs: standout, standout, standout, premium
+
+Customer: Nike
+SKUs: premium, premium, premium, premium
